@@ -93,6 +93,6 @@ Użytkownik może wybrać kraj i miasto oraz sprawdzić dane pogodowe.
 
 ---
 
-## Zrzut ekranu
+## Zrzut ekranu działającej aplikacji w przeglądarce
+<img width="820" height="659" alt="image" src="https://github.com/user-attachments/assets/69d75269-98ac-40dd-aebe-9cf97f99d810" />
 
-W tym miejscu należy dodać zrzut ekranu działającej aplikacji w przeglądarce.

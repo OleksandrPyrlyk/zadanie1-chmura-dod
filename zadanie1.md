@@ -2,7 +2,7 @@
 
 ## Autor
 
-Oleksandr Nazwisko
+Oleksandr Pyrlyk
 
 ## Część obowiązkowa
 
@@ -42,7 +42,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-const AUTHOR = "Oleksandr Nazwisko";
+const AUTHOR = "Oleksandr Pyrlyk";
 
 const weatherData = {
     "Polska": {
@@ -282,7 +282,7 @@ Plik zawiera:
 ```dockerfile
 FROM node:20-alpine
 
-LABEL org.opencontainers.image.authors="Oleksandr Nazwisko"
+LABEL org.opencontainers.image.authors="Oleksandr Pyrlyk"
 LABEL org.opencontainers.image.title="Aplikacja pogodowa - Zadanie 1"
 LABEL org.opencontainers.image.description="Aplikacja Node.js pokazująca pogodę dla wybranego kraju i miasta"
 
@@ -343,11 +343,9 @@ docker logs zadanie1-container
 Przykładowy wynik:
 
 ```text
-====================================
 Data uruchomienia aplikacji: 2026-05-03T18:00:00.000Z
-Autor programu: Oleksandr Nazwisko
+Autor programu: Oleksandr Pyrlyk
 Aplikacja nasłuchuje na porcie TCP: 8080
-====================================
 ```
 
 ### d. Sprawdzenie rozmiaru obrazu

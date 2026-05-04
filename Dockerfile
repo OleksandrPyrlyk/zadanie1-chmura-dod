@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 
-FROM node:20-alpine AS source
+FROM alpine:3.20 AS source
 
 ARG GITHUB_REPO
 
@@ -9,7 +9,7 @@ WORKDIR /src
 RUN apk add --no-cache git
 
 RUN --mount=type=secret,id=github_token \
-    echo "BuildKit secret został zamontowany poprawnie" && \
+    echo "BuildKit secret mounted correctly" && \
     git clone ${GITHUB_REPO} app
 
 
@@ -25,9 +25,9 @@ RUN npm install --omit=dev && npm cache clean --force
 FROM node:20-alpine
 
 LABEL org.opencontainers.image.authors="Oleksandr Pyrlyk"
-LABEL org.opencontainers.image.title="Aplikacja pogodowa - Zadanie 1"
-LABEL org.opencontainers.image.description="Multi-platform image built with BuildKit, registry cache and secret mount"
-LABEL org.opencontainers.image.source="https://github.com/OleksandrPyrlyk/zadanie1-chmura"
+LABEL org.opencontainers.image.title="Aplikacja pogodowa - Zadanie 1 dodatkowe"
+LABEL org.opencontainers.image.description="Obraz multi-platform OCI z BuildKit secret oraz registry cache mode=max"
+LABEL org.opencontainers.image.source="https://github.com/OleksandrPyrlyk/zadanie1-chmura-dod"
 
 ENV NODE_ENV=production
 ENV PORT=8080

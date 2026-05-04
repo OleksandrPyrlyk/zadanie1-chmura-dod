@@ -106,9 +106,7 @@ app.get("/api/weather", async (req, res) => {
 app.listen(PORT, () => {
     const startDate = new Date().toISOString();
 
-    console.log("====================================");
     console.log(`Data uruchomienia aplikacji: ${startDate}`);
     console.log(`Autor programu: ${AUTHOR}`);
     console.log(`Aplikacja nasłuchuje na porcie TCP: ${PORT}`);
-    console.log("====================================");
 });

@@ -77,12 +77,6 @@ Sekret został przekazany podczas budowania:
 ```bash
 --secret id=github_token,src=github_token.txt
 ```
-
-**Komentarz:**
-
-* mechanizm secret został użyty zgodnie z wymaganiami
-* dane wrażliwe nie zostały ujawnione w sprawozdaniu
-
 ---
 
 ## Potwierdzenie manifestu
@@ -97,10 +91,6 @@ docker buildx imagetools inspect oleksandrpyrlyk/zadanie1-weather-dod:latest
 Platform: linux/amd64
 Platform: linux/arm64
 ```
-
-**Komentarz:**
-Manifest zawiera deklaracje dla obu wymaganych platform sprzętowych.
-
 ---
 
 ## Potwierdzenie utworzenia cache
@@ -116,10 +106,6 @@ Name:      docker.io/oleksandrpyrlyk/zadanie1-weather-dod:buildcache
 MediaType: application/vnd.oci.image.manifest.v1+json
 Digest:    sha256:ce14a98556af98dc4d563f9cfb45c6dce44e4badb687ec2e0abf92a265c4162f
 ```
-
-**Komentarz:**
-Cache obraz został poprawnie zapisany w registry.
-
 ---
 
 ## Potwierdzenie wykorzystania cache
@@ -135,10 +121,6 @@ docker buildx build ...
 ```text
 CACHED
 ```
-
-**Komentarz:**
-Widoczne wpisy `CACHED` potwierdzają wykorzystanie danych cache podczas budowania obrazu.
-
 ---
 
 ## Analiza podatności (CVE)
@@ -154,12 +136,6 @@ lub:
 ```bash
 trivy image oleksandrpyrlyk/zadanie1-weather-dod:latest
 ```
-
-**Komentarz:**
-
-* obraz nie powinien zawierać podatności CRITICAL i HIGH
-* w przypadku ich wystąpienia należy dodać uzasadnienie
-
 ---
 
 ## Podsumowanie

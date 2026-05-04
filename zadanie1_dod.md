@@ -150,18 +150,3 @@ Zrealizowano wszystkie wymagania dla wersji 3:
 * potwierdzenie manifestu
 * potwierdzenie cache
 * brak ujawnienia danych wrażliwych
-
----
-
-## Informacja końcowa
-
-Plik `zadanie1_dod.md` został umieszczony w repozytorium GitHub zgodnie z wymaganiami zadania.
-Obraz kontenera został opublikowany w DockerHub.
-
-Do oceny należy przekazać wyłącznie linki do repozytoriów:
-
-GitHub:
-https://github.com/OleksandrPyrlyk/zadanie1-chmura-dod
-
-DockerHub:
-https://hub.docker.com/r/oleksandrpyrlyk/zadanie1-weather-dod

@@ -47,10 +47,6 @@ docker buildx inspect --bootstrap
 Driver: docker-container
 Platforms: linux/amd64, linux/arm64
 ```
-
-**Komentarz:**
-Potwierdzono użycie wymaganego sterownika `docker-container`.
-
 ---
 
 ## Budowanie obrazu multi-platform
